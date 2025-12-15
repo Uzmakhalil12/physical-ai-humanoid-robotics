@@ -1,0 +1,249 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Robotics-themed styling for Physical AI and Humanoid Robotics */
+:root {
+  --ifm-color-primary: #1a73e8; /* Modern blue */
+  --ifm-color-primary-dark: #1557b0;
+  --ifm-color-primary-darker: #134da3;
+  --ifm-color-primary-darkest: #0f3d85;
+  --ifm-color-primary-light: #4285f4;
+  --ifm-color-primary-lighter: #5a95f5;
+  --ifm-color-primary-lightest: #84abf7;
+  --ifm-color-secondary: #34a853; /* Robot green */
+  --ifm-color-accent: #fbbc04; /* Warning yellow */
+  --ifm-code-font-size: 95%;
+
+  /* Custom robotics colors */
+  --robotics-blue: #1a73e8;
+  --robotics-green: #34a853;
+  --robotics-purple: #aa00ff;
+  --robotics-gray: #f8f9fa;
+  --robotics-dark: #202124;
+}
+
+/* Enhanced dark theme */
+html[data-theme='dark'] {
+  --ifm-color-primary: #8ab4f8;
+  --ifm-color-primary-dark: #669df6;
+  --ifm-color-primary-darker: #508ef4;
+  --ifm-color-primary-darkest: #3b78e7;
+  --ifm-color-primary-light: #a4c8f0;
+  --ifm-color-primary-lighter: #bcd9f5;
+  --ifm-color-primary-lightest: #d6e9fa;
+}
+
+/* Modern header styling */
+.navbar {
+  background: linear-gradient(135deg, var(--robotics-blue) 0%, var(--ifm-color-primary-dark) 100%);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Enhanced sidebar */
+.menu {
+  background: var(--ifm-background-color);
+}
+
+/* Card styling for better content presentation */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Code block enhancements */
+.code-block {
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+.button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Typography enhancements */
+.markdown h1, .markdown h2, .markdown h3 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.markdown h1 {
+  border-bottom: 2px solid var(--robotics-blue);
+  padding-bottom: 0.5rem;
+}
+
+.markdown h2 {
+  border-left: 4px solid var(--robotics-blue);
+  padding-left: 1rem;
+}
+
+/* Link styling */
+.markdown a {
+  text-decoration: none;
+  position: relative;
+}
+
+.markdown a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--robotics-blue);
+  transition: width 0.3s ease;
+}
+
+.markdown a:hover::after {
+  width: 100%;
+}
+
+/* Table styling */
+.markdown table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.markdown table th {
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+/* Blockquote styling */
+.markdown blockquote {
+  border-left: 4px solid var(--robotics-green);
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.alert--info {
+  border-color: var(--robotics-blue);
+  background: rgba(26, 115, 232, 0.1);
+}
+
+.alert--success {
+  border-color: var(--robotics-green);
+  background: rgba(52, 168, 83, 0.1);
+}
+
+.alert--warning {
+  border-color: var(--robotics-accent);
+  background: rgba(251, 188, 4, 0.1);
+}
+
+/* Footer styling */
+.footer {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--robotics-dark) 100%);
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Hero section styling if present */
+.hero {
+  background: linear-gradient(135deg, var(--robotics-blue) 0%, var(--robotics-purple) 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: 0;
+}
+
+/* Code syntax highlighting enhancements */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #637777;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #c0c5ce;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #bf616a;
+}
+
+.token.boolean,
+.token.number {
+  color: #d08770;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a3be8c;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #b48ead;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #8fa1b3;
+}
+
+.token.keyword {
+  color: #c084fc;
+}
+
+.token.regex,
+.token.important {
+  color: #e90;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
