@@ -12,14 +12,14 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
+  // Set the '/physical-ai-humanoid-robotics/', pathname under which your site is served
   // For GitHub pages deployment, it is often '/<physical-ai-robotics>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'your-repo-name', // Usually your repo name.
+  organizationName: 'uzmakhalil12', // Usually your GitHub org/user name.
+  projectName: 'physical-ai-humanoid-robotics', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
