@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-qwen-textbook/assessments" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Assessments and Evaluation for Physical AI Systems | Physical AI and Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://physicalairobotics.vercel.app/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://physicalairobotics.vercel.app/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://physicalairobotics.vercel.app/docs/qwen-textbook/assessments"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Assessments and Evaluation for Physical AI Systems | Physical AI and Humanoid Robotics"><meta data-rh="true" name="description" content="Methods for evaluating Physical AI system performance"><meta data-rh="true" property="og:description" content="Methods for evaluating Physical AI system performance"><link data-rh="true" rel="icon" href="/img/favicon.icon"><link data-rh="true" rel="canonical" href="https://physicalairobotics.vercel.app/docs/qwen-textbook/assessments"><link data-rh="true" rel="alternate" href="https://physicalairobotics.vercel.app/docs/qwen-textbook/assessments" hreflang="en"><link data-rh="true" rel="alternate" href="https://physicalairobotics.vercel.app/docs/qwen-textbook/assessments" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Assessments and Evaluation for Physical AI Systems","item":"https://physicalairobotics.vercel.app/docs/qwen-textbook/assessments"}]}</script><link rel="stylesheet" href="/assets/css/styles.92f64a5c.css">
+<script src="/assets/js/runtime~main.79219c6b.js" defer="defer"></script>
+<script src="/assets/js/main.9df491b5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Physical AI &amp; Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Physical AI &amp; Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI and Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/docs/intro">Chapters</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/uzmakhalil12/physical-ai-humanoid-robotics" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/docs/intro"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/qwen/"><span title="Physical AI and Robotics" class="categoryLinkLabel_W154">Physical AI and Robotics</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/qwen-textbook/physical-ai-foundations"><span title="Qwen Textbook" class="categoryLinkLabel_W154">Qwen Textbook</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/physical-ai-foundations"><span title="Physical AI Foundations" class="linkLabel_WmDU">Physical AI Foundations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/ros2-fundamentals"><span title="ROS2 Fundamentals" class="linkLabel_WmDU">ROS2 Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/gazebo-simulation"><span title="Gazebo Simulation" class="linkLabel_WmDU">Gazebo Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/unity-visualization"><span title="Unity Visualization for Physical AI" class="linkLabel_WmDU">Unity Visualization for Physical AI</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/nvidia-isaac"><span title="NVIDIA Isaac Platform" class="linkLabel_WmDU">NVIDIA Isaac Platform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/humanoid-robotics"><span title="Humanoid Robotics" class="linkLabel_WmDU">Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/vision-language-action"><span title="Vision-Language-Action Models in Robotics" class="linkLabel_WmDU">Vision-Language-Action Models in Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/conversational-robotics"><span title="Conversational Robotics" class="linkLabel_WmDU">Conversational Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/hardware-requirements"><span title="Hardware Requirements for Physical AI" class="linkLabel_WmDU">Hardware Requirements for Physical AI</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/qwen-textbook/assessments"><span title="Assessments and Evaluation for Physical AI Systems" class="linkLabel_WmDU">Assessments and Evaluation for Physical AI Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/projects-applications"><span title="Projects and Applications of Physical AI" class="linkLabel_WmDU">Projects and Applications of Physical AI</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/glossary"><span title="Glossary of Physical AI and Robotics Terms" class="linkLabel_WmDU">Glossary of Physical AI and Robotics Terms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/index"><span title="Index of Key Topics and Concepts" class="linkLabel_WmDU">Index of Key Topics and Concepts</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/safety-security"><span title="Safety and Security in Physical AI Systems" class="linkLabel_WmDU">Safety and Security in Physical AI Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/qwen-textbook/future-trends"><span title="Future of Physical AI - Trends and Opportunities" class="linkLabel_WmDU">Future of Physical AI - Trends and Opportunities</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Qwen Textbook</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Assessments and Evaluation for Physical AI Systems</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 10: Assessments and Evaluation for Physical AI Systems</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<ul>
+<li class="">Understand the principles of Physical AI evaluation</li>
+<li class="">Learn quantitative and qualitative assessment methods</li>
+<li class="">Design appropriate benchmarks for Physical AI systems</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction" translate="no">​</a></h2>
+<p>Evaluating Physical AI systems requires fundamentally different approaches than traditional AI evaluation. Unlike systems that operate on static datasets, Physical AI systems must be assessed in dynamic, real-world environments where safety, reliability, and human interaction are paramount. The evaluation must account for both the effectiveness of the AI algorithms and the physical capabilities of the system.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="evaluation-frameworks">Evaluation Frameworks<a href="#evaluation-frameworks" class="hash-link" aria-label="Direct link to Evaluation Frameworks" title="Direct link to Evaluation Frameworks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-dimensional-assessment">Multi-Dimensional Assessment<a href="#multi-dimensional-assessment" class="hash-link" aria-label="Direct link to Multi-Dimensional Assessment" title="Direct link to Multi-Dimensional Assessment" translate="no">​</a></h3>
+<p>Key dimensions of Physical AI evaluation:</p>
+<ul>
+<li class=""><strong>Task Performance</strong>: Success rate and efficiency</li>
+<li class=""><strong>Safety</strong>: Risk mitigation and safety metrics</li>
+<li class=""><strong>Robustness</strong>: Performance across varied conditions</li>
+<li class=""><strong>Usability</strong>: Human interaction and user experience</li>
+<li class=""><strong>Scalability</strong>: Performance with increased complexity</li>
+<li class=""><strong>Reliability</strong>: Consistency over extended operation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quantitative-vs-qualitative-assessment">Quantitative vs. Qualitative Assessment<a href="#quantitative-vs-qualitative-assessment" class="hash-link" aria-label="Direct link to Quantitative vs. Qualitative Assessment" title="Direct link to Quantitative vs. Qualitative Assessment" translate="no">​</a></h3>
+<p>Balancing numerical metrics with human judgment:</p>
+<ul>
+<li class="">Quantitative metrics for reproducible results</li>
+<li class="">Qualitative assessments for nuanced behaviors</li>
+<li class="">Human-in-the-loop evaluation studies</li>
+<li class="">Expert evaluation for complex tasks</li>
+<li class="">Mixed-methods evaluation approaches</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-metrics">Performance Metrics<a href="#performance-metrics" class="hash-link" aria-label="Direct link to Performance Metrics" title="Direct link to Performance Metrics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-specific-metrics">Task-Specific Metrics<a href="#task-specific-metrics" class="hash-link" aria-label="Direct link to Task-Specific Metrics" title="Direct link to Task-Specific Metrics" translate="no">​</a></h3>
+<p>Metrics tailored to specific applications:</p>
+<ul>
+<li class="">Success rate for task completion</li>
+<li class="">Time to completion for efficiency</li>
+<li class="">Energy efficiency for mobile systems</li>
+<li class="">Accuracy of perception and planning</li>
+<li class="">Resource utilization metrics</li>
+<li class="">Failure recovery effectiveness</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-metrics">Safety Metrics<a href="#safety-metrics" class="hash-link" aria-label="Direct link to Safety Metrics" title="Direct link to Safety Metrics" translate="no">​</a></h3>
+<p>Critical safety-related measures:</p>
+<ul>
+<li class="">Number of safety violations</li>
+<li class="">Response time to safety-critical events</li>
+<li class="">Risk assessment accuracy</li>
+<li class="">Physical harm occurrence rate</li>
+<li class="">Error recovery without harm</li>
+<li class="">Safe failure modes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interaction-quality-metrics">Interaction Quality Metrics<a href="#interaction-quality-metrics" class="hash-link" aria-label="Direct link to Interaction Quality Metrics" title="Direct link to Interaction Quality Metrics" translate="no">​</a></h3>
+<p>Human-robot interaction measures:</p>
+<ul>
+<li class="">User satisfaction scores</li>
+<li class="">Task completion efficiency with human</li>
+<li class="">Communication effectiveness</li>
+<li class="">Trust building metrics</li>
+<li class="">Learning curve for users</li>
+<li class="">Social acceptance measures</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="benchmarking-approaches">Benchmarking Approaches<a href="#benchmarking-approaches" class="hash-link" aria-label="Direct link to Benchmarking Approaches" title="Direct link to Benchmarking Approaches" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-based-evaluation">Simulation-Based Evaluation<a href="#simulation-based-evaluation" class="hash-link" aria-label="Direct link to Simulation-Based Evaluation" title="Direct link to Simulation-Based Evaluation" translate="no">​</a></h3>
+<p>Advantages of simulation testing:</p>
+<ul>
+<li class="">Controlled environmental conditions</li>
+<li class="">Reproducible test scenarios</li>
+<li class="">Safety for testing dangerous situations</li>
+<li class="">Cost-effective large-scale evaluation</li>
+<li class="">Stress testing capabilities</li>
+<li class="">Isolation of specific components</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-world-evaluation">Real-World Evaluation<a href="#real-world-evaluation" class="hash-link" aria-label="Direct link to Real-World Evaluation" title="Direct link to Real-World Evaluation" translate="no">​</a></h3>
+<p>Necessity of physical testing:</p>
+<ul>
+<li class="">Validation of simulation results</li>
+<li class="">Environmental complexity</li>
+<li class="">Unforeseen interaction scenarios</li>
+<li class="">Long-term reliability assessment</li>
+<li class="">User experience validation</li>
+<li class="">Regulatory compliance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hybrid-evaluation">Hybrid Evaluation<a href="#hybrid-evaluation" class="hash-link" aria-label="Direct link to Hybrid Evaluation" title="Direct link to Hybrid Evaluation" translate="no">​</a></h3>
+<p>Combining simulation and real-world testing:</p>
+<ul>
+<li class="">Transfer validation protocols</li>
+<li class="">Domain randomization effectiveness</li>
+<li class="">Simulation-to-reality gap measurement</li>
+<li class="">Progressive evaluation pipelines</li>
+<li class="">Cost-effective evaluation strategies</li>
+<li class="">Safety-first testing approaches</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="standardized-benchmarks">Standardized Benchmarks<a href="#standardized-benchmarks" class="hash-link" aria-label="Direct link to Standardized Benchmarks" title="Direct link to Standardized Benchmarks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-based-benchmarks">Task-Based Benchmarks<a href="#task-based-benchmarks" class="hash-link" aria-label="Direct link to Task-Based Benchmarks" title="Direct link to Task-Based Benchmarks" translate="no">​</a></h3>
+<p>Common benchmark tasks:</p>
+<ul>
+<li class="">Object manipulation challenges</li>
+<li class="">Navigation in complex environments</li>
+<li class="">Human-robot collaboration scenarios</li>
+<li class="">Multi-modal interaction tasks</li>
+<li class="">Long-term autonomy challenges</li>
+<li class="">Failure recovery demonstrations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="domain-specific-benchmarks">Domain-Specific Benchmarks<a href="#domain-specific-benchmarks" class="hash-link" aria-label="Direct link to Domain-Specific Benchmarks" title="Direct link to Domain-Specific Benchmarks" translate="no">​</a></h3>
+<p>Application-focused evaluations:</p>
+<ul>
+<li class="">Hospital navigation for medical robots</li>
+<li class="">Warehouse operations for logistics robots</li>
+<li class="">Home assistance for service robots</li>
+<li class="">Factory automation for industrial robots</li>
+<li class="">Educational tasks for teaching robots</li>
+<li class="">Customer service for retail robots</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="comparative-evaluation">Comparative Evaluation<a href="#comparative-evaluation" class="hash-link" aria-label="Direct link to Comparative Evaluation" title="Direct link to Comparative Evaluation" translate="no">​</a></h3>
+<p>Benchmarking against standards:</p>
+<ul>
+<li class="">Human performance baselines</li>
+<li class="">Existing system comparisons</li>
+<li class="">State-of-the-art performance</li>
+<li class="">Random policy baselines</li>
+<li class="">Theoretical performance limits</li>
+<li class="">Cost-effectiveness measures</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="evaluation-protocols">Evaluation Protocols<a href="#evaluation-protocols" class="hash-link" aria-label="Direct link to Evaluation Protocols" title="Direct link to Evaluation Protocols" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlled-testing">Controlled Testing<a href="#controlled-testing" class="hash-link" aria-label="Direct link to Controlled Testing" title="Direct link to Controlled Testing" translate="no">​</a></h3>
+<p>Systematic evaluation procedures:</p>
+<ul>
+<li class="">Standardized test environments</li>
+<li class="">Reproducible test scenarios</li>
+<li class="">Calibrated measurement tools</li>
+<li class="">Blinded evaluation protocols</li>
+<li class="">Statistical significance testing</li>
+<li class="">Inter-rater reliability validation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="longitudinal-studies">Longitudinal Studies<a href="#longitudinal-studies" class="hash-link" aria-label="Direct link to Longitudinal Studies" title="Direct link to Longitudinal Studies" translate="no">​</a></h3>
+<p>Extended evaluation over time:</p>
+<ul>
+<li class="">Performance degradation monitoring</li>
+<li class="">Wear and maintenance assessment</li>
+<li class="">User adaptation and acceptance</li>
+<li class="">Learning and adaptation effectiveness</li>
+<li class="">Long-term reliability measures</li>
+<li class="">Environmental impact assessment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-robot-evaluation">Multi-Robot Evaluation<a href="#multi-robot-evaluation" class="hash-link" aria-label="Direct link to Multi-Robot Evaluation" title="Direct link to Multi-Robot Evaluation" translate="no">​</a></h3>
+<p>Assessing group behaviors:</p>
+<ul>
+<li class="">Coordination effectiveness</li>
+<li class="">Communication efficiency</li>
+<li class="">Resource sharing performance</li>
+<li class="">Conflict resolution success</li>
+<li class="">Scalability to larger groups</li>
+<li class="">Emergent behavior assessment</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="human-centered-evaluation">Human-Centered Evaluation<a href="#human-centered-evaluation" class="hash-link" aria-label="Direct link to Human-Centered Evaluation" title="Direct link to Human-Centered Evaluation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="user-experience-studies">User Experience Studies<a href="#user-experience-studies" class="hash-link" aria-label="Direct link to User Experience Studies" title="Direct link to User Experience Studies" translate="no">​</a></h3>
+<p>Assessing human interaction:</p>
+<ul>
+<li class="">Usability testing protocols</li>
+<li class="">User satisfaction surveys</li>
+<li class="">Trust and acceptance measures</li>
+<li class="">Workload assessment</li>
+<li class="">Error rate analysis</li>
+<li class="">Preference studies</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ethical-considerations">Ethical Considerations<a href="#ethical-considerations" class="hash-link" aria-label="Direct link to Ethical Considerations" title="Direct link to Ethical Considerations" translate="no">​</a></h3>
+<p>Evaluating ethical implications:</p>
+<ul>
+<li class="">Bias in AI decision-making</li>
+<li class="">Privacy preservation effectiveness</li>
+<li class="">Fairness across user demographics</li>
+<li class="">Transparency and explainability</li>
+<li class="">Human autonomy preservation</li>
+<li class="">Cultural sensitivity measures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="social-impact-assessment">Social Impact Assessment<a href="#social-impact-assessment" class="hash-link" aria-label="Direct link to Social Impact Assessment" title="Direct link to Social Impact Assessment" translate="no">​</a></h3>
+<p>Broader societal implications:</p>
+<ul>
+<li class="">Job displacement and creation</li>
+<li class="">Social isolation vs. connection</li>
+<li class="">Skill preservation or replacement</li>
+<li class="">Accessibility for diverse populations</li>
+<li class="">Economic impact measures</li>
+<li class="">Regulatory compliance</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-assessment">Safety Assessment<a href="#safety-assessment" class="hash-link" aria-label="Direct link to Safety Assessment" title="Direct link to Safety Assessment" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="risk-analysis">Risk Analysis<a href="#risk-analysis" class="hash-link" aria-label="Direct link to Risk Analysis" title="Direct link to Risk Analysis" translate="no">​</a></h3>
+<p>Systematic safety evaluation:</p>
+<ul>
+<li class="">Hazard identification</li>
+<li class="">Risk assessment matrices</li>
+<li class="">Failure mode analysis</li>
+<li class="">Safety requirement verification</li>
+<li class="">Controllability measures</li>
+<li class="">Severity impact evaluation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-testing">Safety Testing<a href="#safety-testing" class="hash-link" aria-label="Direct link to Safety Testing" title="Direct link to Safety Testing" translate="no">​</a></h3>
+<p>Validation of safety systems:</p>
+<ul>
+<li class="">Emergency stop functionality</li>
+<li class="">Collision avoidance effectiveness</li>
+<li class="">Safe speed limitation</li>
+<li class="">Error state recovery</li>
+<li class="">Human intervention protocols</li>
+<li class="">System degradation testing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="certification-requirements">Certification Requirements<a href="#certification-requirements" class="hash-link" aria-label="Direct link to Certification Requirements" title="Direct link to Certification Requirements" translate="no">​</a></h3>
+<p>Meeting safety standards:</p>
+<ul>
+<li class="">ISO/IEC standards compliance</li>
+<li class="">Industry-specific certifications</li>
+<li class="">Government regulatory approval</li>
+<li class="">Insurance liability considerations</li>
+<li class="">Professional safety audits</li>
+<li class="">Continuous safety monitoring</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenges-in-evaluation">Challenges in Evaluation<a href="#challenges-in-evaluation" class="hash-link" aria-label="Direct link to Challenges in Evaluation" title="Direct link to Challenges in Evaluation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reproducibility-issues">Reproducibility Issues<a href="#reproducibility-issues" class="hash-link" aria-label="Direct link to Reproducibility Issues" title="Direct link to Reproducibility Issues" translate="no">​</a></h3>
+<p>Difficulties in Physical AI evaluation:</p>
+<ul>
+<li class="">Environmental variability</li>
+<li class="">Hardware differences</li>
+<li class="">Wear and degradation effects</li>
+<li class="">Calibration variations</li>
+<li class="">Human experimenter effects</li>
+<li class="">Long-term system changes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scalability-challenges">Scalability Challenges<a href="#scalability-challenges" class="hash-link" aria-label="Direct link to Scalability Challenges" title="Direct link to Scalability Challenges" translate="no">​</a></h3>
+<p>Evaluation at scale:</p>
+<ul>
+<li class="">Cost of large-scale testing</li>
+<li class="">Standardization across labs</li>
+<li class="">Statistical significance requirements</li>
+<li class="">Infrastructure needs</li>
+<li class="">Multi-site coordination</li>
+<li class="">Resource allocation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ethical-and-privacy-constraints">Ethical and Privacy Constraints<a href="#ethical-and-privacy-constraints" class="hash-link" aria-label="Direct link to Ethical and Privacy Constraints" title="Direct link to Ethical and Privacy Constraints" translate="no">​</a></h3>
+<p>Limitations in testing:</p>
+<ul>
+<li class="">Human subject research protocols</li>
+<li class="">Privacy protection requirements</li>
+<li class="">Data sharing restrictions</li>
+<li class="">Commercial confidentiality</li>
+<li class="">Regulatory compliance</li>
+<li class="">Social acceptance barriers</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="metrics-for-different-physical-ai-types">Metrics for Different Physical AI Types<a href="#metrics-for-different-physical-ai-types" class="hash-link" aria-label="Direct link to Metrics for Different Physical AI Types" title="Direct link to Metrics for Different Physical AI Types" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manipulation-robots">Manipulation Robots<a href="#manipulation-robots" class="hash-link" aria-label="Direct link to Manipulation Robots" title="Direct link to Manipulation Robots" translate="no">​</a></h3>
+<p>Specific metrics for manipulation:</p>
+<ul>
+<li class="">Grasping success rate</li>
+<li class="">Manipulation precision</li>
+<li class="">Task execution time</li>
+<li class="">Energy efficiency in manipulation</li>
+<li class="">Tool usage effectiveness</li>
+<li class="">Delicate object handling</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mobile-robots">Mobile Robots<a href="#mobile-robots" class="hash-link" aria-label="Direct link to Mobile Robots" title="Direct link to Mobile Robots" translate="no">​</a></h3>
+<p>Metrics for locomotion systems:</p>
+<ul>
+<li class="">Navigation success rate</li>
+<li class="">Path efficiency</li>
+<li class="">Obstacle avoidance</li>
+<li class="">Localization accuracy</li>
+<li class="">Energy consumption for mobility</li>
+<li class="">Terrain adaptability</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="social-robots">Social Robots<a href="#social-robots" class="hash-link" aria-label="Direct link to Social Robots" title="Direct link to Social Robots" translate="no">​</a></h3>
+<p>Metrics for interaction systems:</p>
+<ul>
+<li class="">Engagement duration</li>
+<li class="">Social skill demonstration</li>
+<li class="">Emotional recognition accuracy</li>
+<li class="">Contextual appropriateness</li>
+<li class="">Cultural sensitivity</li>
+<li class="">Long-term relationship building</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="future-evaluation-directions">Future Evaluation Directions<a href="#future-evaluation-directions" class="hash-link" aria-label="Direct link to Future Evaluation Directions" title="Direct link to Future Evaluation Directions" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automated-assessment">Automated Assessment<a href="#automated-assessment" class="hash-link" aria-label="Direct link to Automated Assessment" title="Direct link to Automated Assessment" translate="no">​</a></h3>
+<p>Emerging assessment technologies:</p>
+<ul>
+<li class="">Autonomous evaluation systems</li>
+<li class="">AI-based assessment algorithms</li>
+<li class="">Continuous monitoring systems</li>
+<li class="">Self-evaluation capabilities</li>
+<li class="">Predictive assessment models</li>
+<li class="">Real-time feedback systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="standardization-efforts">Standardization Efforts<a href="#standardization-efforts" class="hash-link" aria-label="Direct link to Standardization Efforts" title="Direct link to Standardization Efforts" translate="no">​</a></h3>
+<p>Developing evaluation standards:</p>
+<ul>
+<li class="">International benchmarking</li>
+<li class="">Common evaluation protocols</li>
+<li class="">Shared testing facilities</li>
+<li class="">Reproducible experiment platforms</li>
+<li class="">Open evaluation frameworks</li>
+<li class="">Certification standards</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-summary">Chapter Summary<a href="#chapter-summary" class="hash-link" aria-label="Direct link to Chapter Summary" title="Direct link to Chapter Summary" translate="no">​</a></h2>
+<p>Evaluation of Physical AI systems requires comprehensive, multi-dimensional approaches that account for safety, real-world performance, and human interaction. Effective evaluation combines quantitative metrics with qualitative assessment, simulation with real-world testing, and technical measures with human-centered evaluation.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercises">Exercises<a href="#exercises" class="hash-link" aria-label="Direct link to Exercises" title="Direct link to Exercises" translate="no">​</a></h2>
+<ol>
+<li class="">Design an evaluation framework for a home assistance robot</li>
+<li class="">Create a safety assessment protocol for a mobile robot</li>
+<li class="">Propose metrics for evaluating a collaborative robot in manufacturing</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="further-reading">Further Reading<a href="#further-reading" class="hash-link" aria-label="Direct link to Further Reading" title="Direct link to Further Reading" translate="no">​</a></h2>
+<ul>
+<li class="">&quot;Evaluation of Human-Robot Interaction&quot; by Belpaeme et al.</li>
+<li class="">&quot;Robotics Benchmarking and Standards&quot; by ISO/IEC JTC 1</li>
+<li class="">Recent papers from ACM/IEEE International Conference on Human-Robot Interaction</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/qwen-textbook/10-assessments.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/qwen-textbook/hardware-requirements"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Hardware Requirements for Physical AI</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/qwen-textbook/projects-applications"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Projects and Applications of Physical AI</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#evaluation-frameworks" class="table-of-contents__link toc-highlight">Evaluation Frameworks</a><ul><li><a href="#multi-dimensional-assessment" class="table-of-contents__link toc-highlight">Multi-Dimensional Assessment</a></li><li><a href="#quantitative-vs-qualitative-assessment" class="table-of-contents__link toc-highlight">Quantitative vs. Qualitative Assessment</a></li></ul></li><li><a href="#performance-metrics" class="table-of-contents__link toc-highlight">Performance Metrics</a><ul><li><a href="#task-specific-metrics" class="table-of-contents__link toc-highlight">Task-Specific Metrics</a></li><li><a href="#safety-metrics" class="table-of-contents__link toc-highlight">Safety Metrics</a></li><li><a href="#interaction-quality-metrics" class="table-of-contents__link toc-highlight">Interaction Quality Metrics</a></li></ul></li><li><a href="#benchmarking-approaches" class="table-of-contents__link toc-highlight">Benchmarking Approaches</a><ul><li><a href="#simulation-based-evaluation" class="table-of-contents__link toc-highlight">Simulation-Based Evaluation</a></li><li><a href="#real-world-evaluation" class="table-of-contents__link toc-highlight">Real-World Evaluation</a></li><li><a href="#hybrid-evaluation" class="table-of-contents__link toc-highlight">Hybrid Evaluation</a></li></ul></li><li><a href="#standardized-benchmarks" class="table-of-contents__link toc-highlight">Standardized Benchmarks</a><ul><li><a href="#task-based-benchmarks" class="table-of-contents__link toc-highlight">Task-Based Benchmarks</a></li><li><a href="#domain-specific-benchmarks" class="table-of-contents__link toc-highlight">Domain-Specific Benchmarks</a></li><li><a href="#comparative-evaluation" class="table-of-contents__link toc-highlight">Comparative Evaluation</a></li></ul></li><li><a href="#evaluation-protocols" class="table-of-contents__link toc-highlight">Evaluation Protocols</a><ul><li><a href="#controlled-testing" class="table-of-contents__link toc-highlight">Controlled Testing</a></li><li><a href="#longitudinal-studies" class="table-of-contents__link toc-highlight">Longitudinal Studies</a></li><li><a href="#multi-robot-evaluation" class="table-of-contents__link toc-highlight">Multi-Robot Evaluation</a></li></ul></li><li><a href="#human-centered-evaluation" class="table-of-contents__link toc-highlight">Human-Centered Evaluation</a><ul><li><a href="#user-experience-studies" class="table-of-contents__link toc-highlight">User Experience Studies</a></li><li><a href="#ethical-considerations" class="table-of-contents__link toc-highlight">Ethical Considerations</a></li><li><a href="#social-impact-assessment" class="table-of-contents__link toc-highlight">Social Impact Assessment</a></li></ul></li><li><a href="#safety-assessment" class="table-of-contents__link toc-highlight">Safety Assessment</a><ul><li><a href="#risk-analysis" class="table-of-contents__link toc-highlight">Risk Analysis</a></li><li><a href="#safety-testing" class="table-of-contents__link toc-highlight">Safety Testing</a></li><li><a href="#certification-requirements" class="table-of-contents__link toc-highlight">Certification Requirements</a></li></ul></li><li><a href="#challenges-in-evaluation" class="table-of-contents__link toc-highlight">Challenges in Evaluation</a><ul><li><a href="#reproducibility-issues" class="table-of-contents__link toc-highlight">Reproducibility Issues</a></li><li><a href="#scalability-challenges" class="table-of-contents__link toc-highlight">Scalability Challenges</a></li><li><a href="#ethical-and-privacy-constraints" class="table-of-contents__link toc-highlight">Ethical and Privacy Constraints</a></li></ul></li><li><a href="#metrics-for-different-physical-ai-types" class="table-of-contents__link toc-highlight">Metrics for Different Physical AI Types</a><ul><li><a href="#manipulation-robots" class="table-of-contents__link toc-highlight">Manipulation Robots</a></li><li><a href="#mobile-robots" class="table-of-contents__link toc-highlight">Mobile Robots</a></li><li><a href="#social-robots" class="table-of-contents__link toc-highlight">Social Robots</a></li></ul></li><li><a href="#future-evaluation-directions" class="table-of-contents__link toc-highlight">Future Evaluation Directions</a><ul><li><a href="#automated-assessment" class="table-of-contents__link toc-highlight">Automated Assessment</a></li><li><a href="#standardization-efforts" class="table-of-contents__link toc-highlight">Standardization Efforts</a></li></ul></li><li><a href="#chapter-summary" class="table-of-contents__link toc-highlight">Chapter Summary</a></li><li><a href="#exercises" class="table-of-contents__link toc-highlight">Exercises</a></li><li><a href="#further-reading" class="table-of-contents__link toc-highlight">Further Reading</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
