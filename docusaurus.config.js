@@ -8,10 +8,10 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
   title: 'Physical AI and Humanoid Robotics',
   tagline: 'A Comprehensive Guide to Physical AI, Robotics, and Embodied Intelligence',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.icon',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://physicalairobotics.vercel.app',
   // Set the '/physical-ai-humanoid-robotics/', pathname under which your site is served
   // For GitHub pages deployment, it is often '/<physical-ai-robotics>/'
   baseUrl: '/',
@@ -85,7 +85,7 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://github.com/your-username/your-repo-name',
+            href: 'https://github.com/uzmakhalil12/physical-ai-humanoid-robotics',
             label: 'GitHub',
             position: 'right',
           },
