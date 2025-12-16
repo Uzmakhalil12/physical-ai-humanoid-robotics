@@ -11,9 +11,9 @@ const config = {
   favicon: 'img/favicon.icon',
 
   // Set the production url of your site here
-  url: 'https://physicalairobotics.vercel.app',
+  url: 'https://physical-ai-humanoid-robotics.vercel.app',
   // Set the '/physical-ai-humanoid-robotics/', pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<physical-ai-robotics>/'
+  // For GitHub pages deployment, it is often '/',
   baseUrl: '/',
 
   // GitHub pages deployment config.
