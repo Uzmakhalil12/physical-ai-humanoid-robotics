@@ -134,7 +134,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright uzmakhalil © ${new Date().getFullYear()} physical-ai,Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
